@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		415AB08B45516E414EE03D94 /* libPods-WLLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2520F1298A230A3D9B73DAAE /* libPods-WLLog.a */; };
+		6800F549798F5A77DA90EEB2 /* libPods-WLLogUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4110CDC2740E2D5F6DC230 /* libPods-WLLogUITests.a */; };
+		ED3B2C676F15E31F4E029280 /* libPods-WLLogTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8F98FF053EAC3080E5784E /* libPods-WLLogTests.a */; };
 		F000C34C221BDB65002E30AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F000C34B221BDB65002E30AD /* AppDelegate.m */; };
 		F000C34F221BDB65002E30AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F000C34E221BDB65002E30AD /* ViewController.m */; };
 		F000C352221BDB65002E30AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F000C350221BDB65002E30AD /* Main.storyboard */; };
@@ -35,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0429222894EAEBAB6B8F01A3 /* Pods-WLLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLLog.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLLog/Pods-WLLog.release.xcconfig"; sourceTree = "<group>"; };
+		2520F1298A230A3D9B73DAAE /* libPods-WLLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		461A6CB631B2B8C91EC6DC00 /* Pods-WLLogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLLogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLLogTests/Pods-WLLogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CA59FB130A0D7A8E9E0C139 /* Pods-WLLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLLog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLLog/Pods-WLLog.debug.xcconfig"; sourceTree = "<group>"; };
+		67ACCD1F236A75EB2F735457 /* Pods-WLLogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLLogUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLLogUITests/Pods-WLLogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82F17899D259FB8B4B81E772 /* Pods-WLLogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLLogUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLLogUITests/Pods-WLLogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8F98FF053EAC3080E5784E /* libPods-WLLogTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLLogTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C4AAC6E6D636AA5B351F72 /* Pods-WLLogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLLogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLLogTests/Pods-WLLogTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB4110CDC2740E2D5F6DC230 /* libPods-WLLogUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLLogUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F000C347221BDB65002E30AD /* WLLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F000C34A221BDB65002E30AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F000C34B221BDB65002E30AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415AB08B45516E414EE03D94 /* libPods-WLLog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3B2C676F15E31F4E029280 /* libPods-WLLogTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6800F549798F5A77DA90EEB2 /* libPods-WLLogUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4186A9961038B55A22AF0BD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2520F1298A230A3D9B73DAAE /* libPods-WLLog.a */,
+				BF8F98FF053EAC3080E5784E /* libPods-WLLogTests.a */,
+				DB4110CDC2740E2D5F6DC230 /* libPods-WLLogUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51F6CE76EC49BF4F26D530D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CA59FB130A0D7A8E9E0C139 /* Pods-WLLog.debug.xcconfig */,
+				0429222894EAEBAB6B8F01A3 /* Pods-WLLog.release.xcconfig */,
+				461A6CB631B2B8C91EC6DC00 /* Pods-WLLogTests.debug.xcconfig */,
+				C2C4AAC6E6D636AA5B351F72 /* Pods-WLLogTests.release.xcconfig */,
+				82F17899D259FB8B4B81E772 /* Pods-WLLogUITests.debug.xcconfig */,
+				67ACCD1F236A75EB2F735457 /* Pods-WLLogUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F000C33E221BDB65002E30AD = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				F000C362221BDB66002E30AD /* WLLogTests */,
 				F000C36D221BDB66002E30AD /* WLLogUITests */,
 				F000C348221BDB65002E30AD /* Products */,
+				51F6CE76EC49BF4F26D530D9 /* Pods */,
+				4186A9961038B55A22AF0BD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F000C373221BDB66002E30AD /* Build configuration list for PBXNativeTarget "WLLog" */;
 			buildPhases = (
+				0AC3DAB224B6BA652EB50B97 /* [CP] Check Pods Manifest.lock */,
 				F000C343221BDB65002E30AD /* Sources */,
 				F000C344221BDB65002E30AD /* Frameworks */,
 				F000C345221BDB65002E30AD /* Resources */,
+				1BFB25195654F0D425BFD129 /* [CP] Embed Pods Frameworks */,
+				0B49192C21904EEBFF6F40D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F000C376221BDB66002E30AD /* Build configuration list for PBXNativeTarget "WLLogTests" */;
 			buildPhases = (
+				4652CE112DC121B4D64F3067 /* [CP] Check Pods Manifest.lock */,
 				F000C35B221BDB66002E30AD /* Sources */,
 				F000C35C221BDB66002E30AD /* Frameworks */,
 				F000C35D221BDB66002E30AD /* Resources */,
+				7255396E886DF1DB18C9C303 /* [CP] Embed Pods Frameworks */,
+				173E9F7BD699EE2C22ECC6C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F000C379221BDB66002E30AD /* Build configuration list for PBXNativeTarget "WLLogUITests" */;
 			buildPhases = (
+				76F2B8B5E2FB561B508AD545 /* [CP] Check Pods Manifest.lock */,
 				F000C366221BDB66002E30AD /* Sources */,
 				F000C367221BDB66002E30AD /* Frameworks */,
 				F000C368221BDB66002E30AD /* Resources */,
+				D23C477E93D027AC04D6B5E8 /* [CP] Embed Pods Frameworks */,
+				C9809A208DAF6021FEB44E1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,153 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC3DAB224B6BA652EB50B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLLog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B49192C21904EEBFF6F40D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLLog/Pods-WLLog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		173E9F7BD699EE2C22ECC6C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLLogTests/Pods-WLLogTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BFB25195654F0D425BFD129 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLLog/Pods-WLLog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4652CE112DC121B4D64F3067 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLLogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7255396E886DF1DB18C9C303 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLLogTests/Pods-WLLogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76F2B8B5E2FB561B508AD545 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLLogUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9809A208DAF6021FEB44E1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLLogUITests/Pods-WLLogUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D23C477E93D027AC04D6B5E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLLogUITests/Pods-WLLogUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F000C343221BDB65002E30AD /* Sources */ = {
@@ -433,50 +629,45 @@
 		};
 		F000C374221BDB66002E30AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA59FB130A0D7A8E9E0C139 /* Pods-WLLog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = fanlaif2test;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F000C375221BDB66002E30AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0429222894EAEBAB6B8F01A3 /* Pods-WLLog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = fanlaif2test;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		F000C377221BDB66002E30AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461A6CB631B2B8C91EC6DC00 /* Pods-WLLogTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,16 +677,13 @@
 		};
 		F000C378221BDB66002E30AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C4AAC6E6D636AA5B351F72 /* Pods-WLLogTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,15 +693,12 @@
 		};
 		F000C37A221BDB66002E30AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F17899D259FB8B4B81E772 /* Pods-WLLogUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLogUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,15 +708,12 @@
 		};
 		F000C37B221BDB66002E30AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67ACCD1F236A75EB2F735457 /* Pods-WLLogUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLogUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
