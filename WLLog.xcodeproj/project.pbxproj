@@ -18,6 +18,7 @@
 		F000C35A221BDB66002E30AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F000C359221BDB66002E30AD /* main.m */; };
 		F000C364221BDB66002E30AD /* WLLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F000C363221BDB66002E30AD /* WLLogTests.m */; };
 		F000C36F221BDB66002E30AD /* WLLogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F000C36E221BDB66002E30AD /* WLLogUITests.m */; };
+		F000C381221BDC48002E30AD /* ASTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F000C37E221BDC48002E30AD /* ASTLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,10 @@
 		F000C36A221BDB66002E30AD /* WLLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F000C36E221BDB66002E30AD /* WLLogUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLLogUITests.m; sourceTree = "<group>"; };
 		F000C370221BDB66002E30AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F000C37D221BDC48002E30AD /* ASTwinkleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTwinkleLog.h; sourceTree = "<group>"; };
+		F000C37E221BDC48002E30AD /* ASTLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTLog.m; sourceTree = "<group>"; };
+		F000C37F221BDC48002E30AD /* ASTLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTLog.h; sourceTree = "<group>"; };
+		F000C380221BDC48002E30AD /* ASTLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTLogMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,7 @@
 		F000C33E221BDB65002E30AD = {
 			isa = PBXGroup;
 			children = (
+				F000C37C221BDBF7002E30AD /* Log */,
 				F000C349221BDB65002E30AD /* WLLog */,
 				F000C362221BDB66002E30AD /* WLLogTests */,
 				F000C36D221BDB66002E30AD /* WLLogUITests */,
@@ -170,6 +176,17 @@
 				F000C370221BDB66002E30AD /* Info.plist */,
 			);
 			path = WLLogUITests;
+			sourceTree = "<group>";
+		};
+		F000C37C221BDBF7002E30AD /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				F000C37F221BDC48002E30AD /* ASTLog.h */,
+				F000C37E221BDC48002E30AD /* ASTLog.m */,
+				F000C380221BDC48002E30AD /* ASTLogMacros.h */,
+				F000C37D221BDC48002E30AD /* ASTwinkleLog.h */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F000C34F221BDB65002E30AD /* ViewController.m in Sources */,
+				F000C381221BDC48002E30AD /* ASTLog.m in Sources */,
 				F000C35A221BDB66002E30AD /* main.m in Sources */,
 				F000C34C221BDB65002E30AD /* AppDelegate.m in Sources */,
 			);
@@ -635,7 +653,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = fanlaif2test;
@@ -651,7 +672,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = fanlaif2test;
@@ -667,7 +691,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -683,7 +711,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -698,7 +730,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLogUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -713,7 +749,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLLogUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLLogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

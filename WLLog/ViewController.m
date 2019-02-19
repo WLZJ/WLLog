@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ASTwinkleLog.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    ASTLogInfo(@"测试-1");
+    ASTLogWarn(@"测试-2");
+    ASTLogDebug(@"测试-3");
 }
 
 

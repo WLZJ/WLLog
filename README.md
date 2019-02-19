@@ -1,0 +1,5 @@
+ASTLogError(frmt, ...)
+ASTLogWarn(frmt, ...)
+ASTLogInfo(frmt, ...)
+ASTLogDebug(frmt, ...)
+ASTLogVerbose(frmt, ...)
